@@ -1,0 +1,42 @@
+{% include 'charging_center_header.html' %}
+    <form method="post">
+        <table align="center" style="margin-top: 200px;">
+            <tr>
+                <th>FeedBack</th>
+                <td><input type="text" name="fb" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" name="submit" class="btn btn-primary"></td>
+            </tr>
+        </table>
+    </form>
+    <table align="center" style="margin-top: 100px;width:200px" class="table table-success table-hover">
+        <tr>
+            <th>feedback</th>
+            <th>date</th>
+        </tr>
+        {% for i in data['view'] %}
+        <tr>
+            <td>{{i['feedback']}}</td>
+            <td>{{i['date']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% include 'footer.html' %}
+
+
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.414);
+        }
+        th,td{
+            text-align: center;
+        }
+        th{
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+
+
+    

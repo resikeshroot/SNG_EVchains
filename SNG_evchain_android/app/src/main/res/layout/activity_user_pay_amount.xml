@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black"
+
+    android:orientation="vertical"
+    tools:context=".user_pay_amount">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="PAYMENT" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+
+        android:textColor="@color/white"
+
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Holdername"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="77dp" />
+    <EditText
+        android:id="@+id/et5"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+
+        android:textColor="@color/white"
+
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Account Number"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="CVV"
+
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Exp Date"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="201dp" />
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Amount"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/orange_btn"
+        android:textColor="@color/white"
+        android:hint="PAY"
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="691dp" />
+
+
+
+</LinearLayout>

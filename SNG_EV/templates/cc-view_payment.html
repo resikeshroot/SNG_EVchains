@@ -1,0 +1,24 @@
+{% include 'charging_center_header.html' %}
+
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone</th>
+        <th>Date_time</th>
+        <th>Amount</th>
+    </tr>
+    {%for i in data['view'] %}
+    <tr>
+        <td>{{i['first_name']}}</td>
+        <td>{{i['last_name']}}</td>
+        <td>{{i['phone']}}</td>
+        <td>{{i['date_time']}}</td>
+        <td>{{i['amount']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+{% include 'footer.html' %}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MDevchain"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".enter_email"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".New_password"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Pview"
+            android:exported="false" />
+        <activity
+            android:name=".User_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Uh"
+            android:exported="false" />
+
+        <activity
+            android:name=".Sc_view"
+            android:exported="false" />
+        <activity
+            android:name=".MV"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Cc_view"
+            android:exported="false" />
+        <activity
+            android:name=".evhome"
+            android:exported="false" />
+        <activity
+            android:name=".Pimage"
+            android:exported="false" />
+
+        <activity
+            android:name=".user_pay_amount"
+            android:exported="false" />
+        <activity
+            android:name=".TodaysBooking"
+            android:exported="false" />
+        <activity
+            android:name=".BookNow"
+            android:exported="false" />
+
+        <activity
+            android:name=".User_home"
+            android:exported="false" />
+        <activity
+            android:name=".JsonReq"
+            android:exported="false" />
+        <activity
+            android:name=".Ipsetting"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Send_feedback"
+            android:exported="false" />
+        <activity
+            android:name=".Send_complaint"
+            android:exported="false" />
+
+        <activity
+            android:name=".View_booked_slots"
+            android:exported="false" />
+        <activity
+            android:name=".View_charging_center"
+            android:exported="false" />
+
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

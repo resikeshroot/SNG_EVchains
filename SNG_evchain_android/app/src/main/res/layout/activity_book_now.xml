@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ev8"
+
+    tools:context=".BookNow">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-153dp"
+        tools:layout_editor_absoluteY="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="68dp"
+                android:gravity="center"
+                android:text="Book Now"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/est"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:paddingLeft="68dp"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.0">
+
+                <Spinner
+                    android:id="@+id/spinner20"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textview_background"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"/>
+
+
+
+
+
+
+<!--                <EditText-->
+<!--                    android:id="@+id/date"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_marginStart="32dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:layout_marginEnd="32dp"-->
+<!--                    android:layout_marginBottom="8dp"-->
+<!--                    android:background="@drawable/edittext_background"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Date"-->
+<!--                    android:inputType="date"-->
+<!--                    android:paddingStart="20dp"-->
+<!--                    android:textColorHint="#464646" />-->
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/textview_background"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+
+                    android:ems="10"
+                    android:hint="Time"
+                    android:inputType="time"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#464646" />
+                <EditText
+                    android:id="@+id/clevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/textview_background"
+
+                    android:ems="10"
+                    android:hint="Current Battery Level"
+                    android:inputType="text"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#464646" />
+                <EditText
+                    android:id="@+id/dlevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/textview_background"
+
+                    android:ems="10"
+                    android:hint="Desired Battery Level"
+                    android:inputType="text"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#464646" />
+                <EditText
+                    android:id="@+id/bc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/textview_background"
+
+                    android:ems="10"
+                    android:hint="Battery Capacity"
+                    android:inputType="text"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#464646" />
+
+
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+
+
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/orange_btn"
+
+                    android:text="Book"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

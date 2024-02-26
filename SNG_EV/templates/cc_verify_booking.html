@@ -1,0 +1,56 @@
+{% include 'charging_center_header.html' %}
+
+<table style="margin-top: 200px;" class="table table-info table-hover">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+    
+        <th>Gender</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Slots</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Amount</th>
+        <th>End Time</th>
+        <th>Status</th>
+    </tr>
+    {% for i in data['view'] %}
+    <tr>
+        <td>{{i['first_name']}}</td>
+        <td>{{i['last_name']}}</td>
+      
+        <td>{{i['gender']}}</td>
+        <td>{{i['phone']}}</td>
+        <td>{{i['email']}}</td>
+        <td>{{i['slots']}}</td>
+        
+        <td>{{i['date']}}</td>
+        <td>{{i['time']}}</td>
+        <td>{{i['amount']}}</td>
+        <td>{{i['end_time']}}</td>
+        <td>{{i['status']}}</td>
+
+        {% if i['status']=='pending' %}
+        <td><a href="?action=accept&id={{i['book_id']}}" class="btn btn-success">Accept</a></td>
+        <td><a href="?action=reject&id={{i['book_id']}}" class="btn btn-danger">Reject</a></td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+</table>
+
+<style>
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+    th,td{
+        text-align: center;
+    }
+    th{
+        font-size: 25px;
+    }
+</style>
+
+
+
+{% include 'footer.html' %}

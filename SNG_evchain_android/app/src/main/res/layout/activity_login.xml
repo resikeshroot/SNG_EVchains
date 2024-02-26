@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/evlogin"
+    android:gravity="center"
+
+
+
+    android:padding="50dp"
+    tools:context=".Login">
+
+
+
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+
+        android:background="@drawable/textview_background"
+        android:hint="UserName"
+
+
+
+        android:textColorHint="@color/black"
+
+
+        />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextTextPersonName2"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:gravity="center"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:text="Name" />-->
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:hint="Password"
+        android:background="@drawable/textview_background"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        />
+    <CheckBox
+        android:id="@+id/show_password_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+
+        android:text="Show Password" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lgb1"
+        android:layout_width="250dp"
+        android:background="@drawable/button2"
+        android:textSize="20dp"
+
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/forgot_password_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Forgot Password?"
+        android:clickable="true"
+        android:onClick="onForgotPasswordClicked"/>
+
+
+    <Button
+        android:id="@+id/regis"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+
+
+        android:text="SignUp" />
+</LinearLayout>

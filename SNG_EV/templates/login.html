@@ -1,0 +1,43 @@
+{% include 'public_header.html' %}
+    <form method="post">
+    <table align="center"  style="margin-top: 200px;">
+        <tr>
+        <!-- <th>Username</th> -->
+        <td><input type="text" name="uname" class="form-control" placeholder="UserName" style="text-align: center;" ></td>
+        </tr>
+        <!-- <tr>
+            <td><br></td>
+        </tr> -->
+        <tr>
+            <!-- <th>Password</th> -->
+            <td><input type="password" name="psw" class="form-control" placeholder="Password" style="text-align: center;"></td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" align="center"><input class="btn btn-success" type="submit" value="login" name="login" style="width:120px;height: 45px;"></td>
+        </tr>
+    </table>
+</form>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br>
+{% include 'footer.html' %}
+
+<style>
+    th{
+        font-size: 25px;
+        color: black;
+    }
+    body{
+        background-image: url("/static/login.png");
+        background-size: 100%;
+      }
+
+      input[type="text"] {
+        background-color: grey; /* Set the background color for text input */
+    }
+
+     
+</style>
+
+

@@ -1,0 +1,74 @@
+{% include 'charging_center_header.html' %}
+
+<body>
+    
+
+
+
+
+
+{% if data['up'] %}
+
+<form method="post" >
+
+
+    <table style="margin-top: 200px;" align="center">
+        <tr>
+            <th style="font-size: 25px;">Slot</th>
+            <td><input type="text" name="slot" class="form-control" value="{{data['up'][0]['slots']}}"></td>
+        </tr>
+       
+        <tr>
+            <td colspan="2" align="center"><input class="btn btn-success" type="submit" name="update"></td>
+        </tr>
+    </table>
+
+   
+</form>
+
+{% else %}
+
+
+<form method="post" >
+    <table style="margin-top: 200px;" align="center">
+        <tr>
+            <th style="color:black;font-size: 25px;">Slot</th>
+            <td><input type="text" class="form-control" name="slot" class="form-control"></td>
+        </tr>
+       
+        <tr>
+            <td colspan="2" align="center"><input class="btn btn-success" type="submit" name="submit" ></td>
+        </tr>
+    </table>
+</form>
+
+
+<table style="margin-top: 100px;width:300px" align="center" class="table table-success table-hover">
+    <tr>
+        <th>SI No:</th>
+        <th>Slot</th>
+      
+    </tr>
+    {% for i in data['view'] %}
+    <tr>
+        <td>{{loop.index}}</td>
+        <td>{{i['slots']}}</td>
+     
+        <td><a href="?action=update&id={{i['slot_id']}}" class="btn btn-warning">Update</a></td>
+        <td><a href="?action=delete&id={{i['slot_id']}}" class="btn btn-danger">Delete</a></td>
+    </tr>
+
+</body>
+{% endfor %}
+</table>
+{% endif %}
+
+
+{% include 'footer.html' %}
+
+<style>
+    th,td{
+        text-align: center;
+        color: black;
+    }
+</style>

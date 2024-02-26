@@ -1,0 +1,43 @@
+{% include 'charging_center_header.html' %}
+
+{%if data['up'] %}
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone</th>
+        <th></th>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone</th>
+        <th>Slots</th>
+        <th>Time</th>
+        <th>Power</th>
+        <th>Amount</th>
+    </tr>
+    {% for i in data['view'] %}
+    <tr>
+        <td>{{i['first_name']}}</td>
+        <td>{{i['last_name']}}</td>
+        <td>{{i['phone']}}</td>
+        <td>{{i['slots']}}</td>
+        <td>{{i['time']}}</td>
+        <td>{{i['power']}}</td>
+        
+        
+        
+        <td><a href="cc_view_payment?&bid={{i['book_id']}}&uid={{i['user_id']}}">Payments</a></td>
+        
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+
+{% include 'footer.html' %}

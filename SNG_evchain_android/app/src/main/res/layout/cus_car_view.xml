@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/brd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#333" />
+    <TextView
+        android:id="@+id/prc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#777" />
+    <TextView
+        android:id="@+id/mil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#777" />
+    <TextView
+        android:id="@+id/eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#777" />
+    <TextView
+        android:id="@+id/sft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#777" />
+    <TextView
+        android:id="@+id/ft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#777" />
+    <TextView
+        android:id="@+id/trns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#777" />
+    <TextView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#777" />
+    <!-- Add more TextViews for other car details as needed -->
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8B80D8FF"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complaint"
+        android:fontFamily="@font/bold"
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/complaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:hint="Complaint"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/cbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/view"/>
+</LinearLayout>

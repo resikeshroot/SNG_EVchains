@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ips"
+
+
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Ipsetting">
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:text="EV-BUDDY"-->
+    <!--        android:textSize="30dp"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:textStyle="bold"/>-->
+
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_background"
+
+        android:ems="10"
+        android:gravity="center"
+        android:hint="IP Number"
+        android:layout_marginTop="50dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button1"
+
+
+        android:gravity="center"
+        android:hint="Start"
+        android:textColorHint="@color/white" />
+
+
+</LinearLayout>
